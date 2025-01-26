@@ -1,8 +1,15 @@
 add_rules("mode.debug", "mode.release")
+add_requires("glfw","glad","assimp")
 
 target("YutakaEngine")
     set_kind("binary")
     add_files("src/*.cpp")
+    add_headerfiles("src/*.h")
+    add_packages("glfw","glad","assimp")
+    add_includedirs("D:/ComputerScience/Tools/glm-0.9.8.5/glm")
+    add_includedirs("D:/ComputerScience/Tools/stb_image")
+    add_includedirs("D:/ComputerScience/Tools/assimp")
+    set_targetdir("$(projectdir)")
 
 --
 -- If you want to known more usage about xmake, please see https://xmake.io
