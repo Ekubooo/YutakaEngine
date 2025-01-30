@@ -8,7 +8,6 @@ target("YutakaEngine")
     add_packages("glfw","glad","assimp")
     add_includedirs("D:/ComputerScience/Tools/glm-0.9.8.5/glm")
     add_includedirs("D:/ComputerScience/Tools/stb_image")
-    add_includedirs("D:/ComputerScience/Tools/assimp")
     set_targetdir("$(projectdir)")
 
 --
